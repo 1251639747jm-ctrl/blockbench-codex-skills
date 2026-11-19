@@ -1,6 +1,14 @@
-# Blockbench 建模与参考还原 · Codex Skills
+# Blockbench 共边建模与参考还原 · Codex Skills
+
+**简体中文** · [English](README.en.md)
 
 这个仓库收录了四个中文 Codex 技能。你可以从一张参考图开始做可编辑模型，也可以带着已有的 `.bbmodel`，只修一束头发、一处接缝或一个动作。每个技能都有独立的 `SKILL.md` 入口，三个建模技能还附有专题说明和检查脚本。
+
+## 核心方法：用一条真实边连接两个 Cube
+
+以弯曲的发束为例。先在参考上找出发束转折处的横边，记下左右端点 `P0`、`P1`。上一段在这条边结束，下一段从同一条边转向。两块可以有各自的长度、外表面朝向和厚度，厚度从外表面向内建立。这样转折的位置和发束的外轮廓都能由参考决定。
+
+**怎样确认真的共边？** 保存工程，读取两个 Cube 各自的八个角点，应用自身旋转和静态父组变换，换算到同一坐标系。各取一条完整的实际边，配对两个端点，允许顺序相反。只有两对端点的距离都在声明的容差内，才通过这个接头的数值检查。随后在 Blockbench 查看严格侧视和转折近景，检查内角有没有鼓包、外侧有没有亮缝。动作会改变接头姿态时，还需回放对应动作。[构造公式、角点编号与检查示例](blockbench-shared-edge-modeling/references/shared-edge-construction.md)
 
 ## 按手上的任务选技能
 
@@ -76,3 +84,7 @@ python mc-blockbench-creatures-public/scripts/audit_bbmodel.py "生物.bbmodel" 
 共边检查需要先登记要验的 Cube 对。使用保存文件里的实际 UUID 填写声明，格式见[接头 JSON 示例](blockbench-shared-edge-modeling/references/shared-edge-construction.md)。端点误差能说明登记的两条边是否重合；厚度方向、接缝在正常观看距离下的表现，以及动画中是否穿插，仍需查看模型。
 
 如果只允许改一个部位，可用版本差异工具比较前后两份工程的几何、骨骼、UV、贴图和动作。需要可重复的多视图或动画采样时，按原生验收说明准备 Blockbench、Node.js 和对应工具。[局部修改差异检查](mc-blockbench-creatures-public/references/local-edit-diff.md) · [Blockbench 原生验收](mc-blockbench-creatures-public/references/native-review.md) · [工具准备](mc-blockbench-creatures-public/references/tool-setup.md)
+
+## 授权与商业建模
+
+可以用这套技能接付费建模商单，交付或销售独立创作的模型、贴图、动画和渲染图。技能文档采用 CC BY-NC-SA 4.0，并额外允许商业建模；脚本及配套文件有单独条款。出售原版或改版技能、将技能材料放入付费资源包，须另获许可。[完整授权与使用示例](LICENSE.md)
