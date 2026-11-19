@@ -4,6 +4,11 @@
 
 Four Codex skills for building editable models from reference images and refining existing Blockbench projects. The skill instructions and topic guides are in Chinese. You can invoke each skill by its directory name and describe your task in English.
 
+> [!IMPORTANT]
+> **Reference-based modeling depends heavily on the quality of the references. Provide at least four views: front, back, true left and true right.** A single turnaround sheet or four separate images will work. Show the full silhouette in the same pose and at the same scale throughout. Show each side separately so an asymmetric accessory or lock of hair stays on the correct side.
+>
+> To generate a turnaround, we recommend **Nano Banana 2** or **Nano Banana 2.1** in Gemini. Supply the same original design and ask for four equally scaled views aligned to a common baseline. Before modeling, check the position, count and orientation of accessories against the original and confirm any hidden details the generator has filled in. [Google DeepMind model card](https://deepmind.google/models/model-cards/nano-banana-2-1/)
+
 ## The core technique: build two cubes from one shared edge
 
 Take a lock of hair that bends halfway down. Mark the two ends of the bend on its outer surface, `P0` and `P1`. The upper segment ends along that line and the lower segment starts along it. Give each cube its own length and outward-facing surface normal, and build its thickness inward. This lets you set the bend angle while keeping its position and the silhouette tied to the reference.
@@ -15,7 +20,7 @@ Take a lock of hair that bends halfway down. Mark the two ends of the bend on it
 | Task | Skill | What to expect |
 | --- | --- | --- |
 | Build or repair a curved strand, sleeve or trim using cubes, or reduce the cube count while preserving the shape | [blockbench-shared-edge-modeling](blockbench-shared-edge-modeling/SKILL.md) | Editable geometry, measured seam errors and close-ups, or before-and-after views for a reduction |
-| Reconstruct a character or prop from one or more images | [reference-model-rebuild](reference-model-rebuild/SKILL.md) | A model, matched camera views, reference overlays and a record of inferred details |
+| Reconstruct a character or prop from a four-view reference sheet or image set | [reference-model-rebuild](reference-model-rebuild/SKILL.md) | A model, matched camera views, reference overlays and a record of inferred details |
 | Make a Minecraft-style character, creature or item for a particular project | [mc-blockbench-creatures-public](mc-blockbench-creatures-public/SKILL.md) | A model in the target format, with the textures, rig, animation or exports requested |
 | Get a stalled revision moving again | [task-progress](task-progress/SKILL.md) | A test that distinguishes plausible causes, a revised asset or finding, and the remaining work |
 
@@ -40,9 +45,9 @@ For a project-local installation, download and extract the repository and copy t
 
 > `$blockbench-shared-edge-modeling` Fix the bright gap between segments two and three of the right fringe in character.bbmodel. Keep the tip position, silhouette and texture. Save a new editable file and show the endpoint errors and close-ups from the front and right.
 
-**Rebuild from images.** A nominal side view may still show part of the face. Fit the viewing angle before using the image to estimate depth. With a single image, record which hidden surfaces were inferred. [Camera calibration and overlays](reference-model-rebuild/references/calibration-and-review.md)
+**Rebuild from images.** A nominal side view may still show part of the face. Fit the viewing angle before using the image to estimate depth. Record any surfaces that remain hidden in all four views as inferred. [Camera calibration and overlays](reference-model-rebuild/references/calibration-and-review.md)
 
-> `$reference-model-rebuild` Rebuild this backpack from the front and right reference photos. Match the body and flap first, then add the buckles and straps. Deliver an editable model and both overlays, and identify inferred details on the back.
+> `$reference-model-rebuild` Rebuild this backpack from its front, back, left and right views. Match the body and flap first, then add the buckles and straps. Deliver an editable model and an overlay for each view, and identify inferred details beneath the straps.
 
 **Build for the target game asset.** Specify how the asset will be used. A quadruped needs a convincing support phase, while a handheld item needs a suitable grip point and display transform. The project format determines what can be exported. [Humanoids](mc-blockbench-creatures-public/references/humanoids.md) · [Creatures](mc-blockbench-creatures-public/references/creatures.md) · [Items](mc-blockbench-creatures-public/references/items.md) · [Format selection](mc-blockbench-creatures-public/references/format-routing.md)
 
