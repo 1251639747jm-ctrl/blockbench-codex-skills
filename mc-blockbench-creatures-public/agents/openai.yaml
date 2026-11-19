@@ -1,0 +1,13 @@
+interface:
+  display_name: "MC 人模、生物与道具建模 · 发布版"
+  short_description: "按人模、生物与道具分类制作，结合参考、像素材质与原生动作验收"
+  default_prompt: "使用 $mc-blockbench-creatures-public，按资产类型和参考制作、验证并导出可编辑模型。"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true

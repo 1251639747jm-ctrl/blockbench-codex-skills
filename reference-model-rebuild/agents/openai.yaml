@@ -1,0 +1,4 @@
+interface:
+  display_name: "参考图还原建模"
+  short_description: "主动读图审计与校准叠图，按参考精修 Cube 曲线接面、连续附件和可编辑模型"
+  default_prompt: "使用 $reference-model-rebuild，根据我提供的参考图自行分析可见细节、建立审计表并校准视角，逐部件制作可编辑模型，用投影叠图持续修正；默认总对象数不超过2000。"

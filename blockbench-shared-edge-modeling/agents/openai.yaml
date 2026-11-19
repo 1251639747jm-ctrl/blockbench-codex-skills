@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cube共边建模"
+  short_description: "按参考图与Mesh构造真实共边曲线，完成手脚、无缝接面、贴图和保形减块"
+  default_prompt: "使用 $blockbench-shared-edge-modeling，按参考图与参考Mesh继续制作；先核对实际共边和多视图，按当前预算交付可编辑Cube模型。"
+
+policy:
+  allow_implicit_invocation: true
