@@ -5,6 +5,9 @@ description: 在复杂任务、多轮试错或遇到瓶颈时持续推进用户�
 
 # 持续推进用户目标
 
+> Copyright © 2026 1251639747jm-ctrl. 本技能文档采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)，仅限非商业使用。未经权利人事先明确书面许可，不得用于任何商业活动，包括内置于商业 AI 中转站、API 转发平台及 Agent 服务。脚本及配套文件另适用非商业许可。Noncommercial use only; any commercial use, including integration into commercial AI relay or agent services, requires prior express written permission. [完整授权 / Licensing terms](https://github.com/1251639747jm-ctrl/blockbench-codex-skills/blob/main/LICENSE.md)。
+
+
 ## 如何使用
 
 说明最终要交付什么、当前卡在哪里。已有失败样例、前后对照或检查结果时，一并给出。执行者用一个能区分可能原因的小实验取得新证据，再根据结果推进原任务。

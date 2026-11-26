@@ -81,6 +81,12 @@ python mc-blockbench-creatures-public/scripts/audit_bbmodel.py "creature.bbmodel
 
 Populate the seam manifest with real cube UUIDs from the saved model. The report covers the declared joints. Use the native views to assess thickness, visible gaps, texture continuity and moving parts. For a tightly scoped edit, compare the two saved projects to identify changes to geometry, hierarchy, UVs, texture pixels and animation. [Manifest example](blockbench-shared-edge-modeling/references/shared-edge-construction.md) · [Local edit comparison](mc-blockbench-creatures-public/references/local-edit-diff.md) · [Native review](mc-blockbench-creatures-public/references/native-review.md) · [Tool setup](mc-blockbench-creatures-public/references/tool-setup.md)
 
-## License and commercial modeling
+## License and commercial use
 
-You may use these skills for paid commissions and deliver or sell your independently created models. Documentation uses CC BY-NC-SA 4.0 with additional permission for commercial modeling. Scripts and supporting files have separate terms. Charging for access to the original or modified skill materials, including in a paid bundle, requires separate permission. [License, scope and examples](LICENSE.md)
+This version is licensed for noncommercial purposes only. Documentation uses **CC BY-NC-SA 4.0**; scripts and supporting files are subject to separate noncommercial terms.
+
+**Any commercial use of the skills or supporting materials requires the rights holder's prior express written permission.** This includes paid modeling, commissions, internal commercial use, commercial redistribution, repackaging for sale, and embedding or deployment in commercial AI relay services, API proxy platforms, agent platforms, SaaS or other commercial products and services. Making the skills free, charging only for model calls, hiding the backend implementation, or obtaining indirect revenue through advertising or subscriptions does not itself authorize commercial use.
+
+Noncommercial learning, use, modification and sharing are permitted under the applicable license. Independent outputs do not automatically inherit this repository's license, but using the skills for commercial work still requires separate permission.
+
+[Full licensing terms and commercial licensing contact](LICENSE.md)

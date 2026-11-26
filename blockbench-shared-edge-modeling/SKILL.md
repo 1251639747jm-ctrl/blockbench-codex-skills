@@ -5,6 +5,9 @@ description: "依据参考图与参考 Mesh 制作或精修 Blockbench Cube 模�
 
 # Cube 共边建模
 
+> Copyright © 2026 1251639747jm-ctrl. 本技能文档采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)，仅限非商业使用。未经权利人事先明确书面许可，不得用于任何商业活动，包括内置于商业 AI 中转站、API 转发平台及 Agent 服务。脚本及配套文件另适用非商业许可。Noncommercial use only; any commercial use, including integration into commercial AI relay or agent services, requires prior express written permission. [完整授权 / Licensing terms](https://github.com/1251639747jm-ctrl/blockbench-codex-skills/blob/main/LICENSE.md)。
+
+
 交付可编辑 Cube 模型。所有造型与尺寸来自本次参考和用户指定基线；**曲线接头以两个 Cube 旋转后的同一条实际边为准**。本技能只包含制作方法和执行标准。
 
 ## 如何使用

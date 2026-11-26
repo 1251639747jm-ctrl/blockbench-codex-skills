@@ -90,6 +90,12 @@ python mc-blockbench-creatures-public/scripts/audit_bbmodel.py "生物.bbmodel" 
 
 如果只允许改一个部位，可用版本差异工具比较前后两份工程的几何、骨骼、UV、贴图和动作。需要可重复的多视图或动画采样时，按原生验收说明准备 Blockbench、Node.js 和对应工具。[局部修改差异检查](mc-blockbench-creatures-public/references/local-edit-diff.md) · [Blockbench 原生验收](mc-blockbench-creatures-public/references/native-review.md) · [工具准备](mc-blockbench-creatures-public/references/tool-setup.md)
 
-## 授权与商业建模
+## 授权与商业使用
 
-可以用这套技能接付费建模商单，交付或销售独立创作的模型、贴图、动画和渲染图。技能文档采用 CC BY-NC-SA 4.0，并额外允许商业建模；脚本及配套文件有单独条款。出售原版或改版技能、将技能材料放入付费资源包，须另获许可。[完整授权与使用示例](LICENSE.md)
+本版本仅限非商业使用。技能文档采用 **CC BY-NC-SA 4.0**；脚本及配套文件采用单独的非商业许可。
+
+**未经权利人事先明确书面许可，不得将本仓库的 Skill 或配套材料用于任何商业活动。** 包括但不限于付费建模、接单、商业内部使用、商业分发、二次包装出售，以及内置或部署在商业 AI 中转站、API 转发平台、Agent 平台、SaaS 或其他营利性产品与服务中。即使 Skill 本身免费、只收取模型调用费、隐藏后端实现或通过广告、订阅等间接获利，也不因此获得商业授权。
+
+允许按照适用许可进行非商业学习、使用、修改和分享。独立成果不因使用本技能而自动适用本仓库许可，但使用技能开展商业活动仍须另获授权。
+
+[完整授权协议及商业授权联系方式](LICENSE.md)

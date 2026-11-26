@@ -8,6 +8,9 @@ description: "创建、修改和验收 Minecraft 风格的可编辑 Blockbench �
 
 # Minecraft Blockbench：人模、非人型生物模、物品道具模
 
+> Copyright © 2026 1251639747jm-ctrl. 本技能文档采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)，仅限非商业使用。未经权利人事先明确书面许可，不得用于任何商业活动，包括内置于商业 AI 中转站、API 转发平台及 Agent 服务。脚本及配套文件另适用非商业许可。Noncommercial use only; any commercial use, including integration into commercial AI relay or agent services, requires prior express written permission. [完整授权 / Licensing terms](https://github.com/1251639747jm-ctrl/blockbench-codex-skills/blob/main/LICENSE.md)。
+
+
 按资产类型选择制作分支，共用需求分析、造型、贴图、按需动画与原生验收流程。文件格式按用户目标和项目导出链选择。
 
 ## 如何使用

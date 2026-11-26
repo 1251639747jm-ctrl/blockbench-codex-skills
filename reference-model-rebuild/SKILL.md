@@ -5,6 +5,9 @@ description: "依据一张或多张参考图重建、续接精修可编辑三维
 
 # 参考图还原建模
 
+> Copyright © 2026 1251639747jm-ctrl. 本技能文档采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)，仅限非商业使用。未经权利人事先明确书面许可，不得用于任何商业活动，包括内置于商业 AI 中转站、API 转发平台及 Agent 服务。脚本及配套文件另适用非商业许可。Noncommercial use only; any commercial use, including integration into commercial AI relay or agent services, requires prior express written permission. [完整授权 / Licensing terms](https://github.com/1251639747jm-ctrl/blockbench-codex-skills/blob/main/LICENSE.md)。
+
+
 从参考图出发，恢复可见的轮廓、比例、厚度、切面、层次与遮挡，交付可继续编辑的三维模型。流程是：**实际看图 → 自行记录细节与建立审计 → 校准视角 → 隔离部件描形 → 多视角叠图修正 → 完成层次 → 匹配外观**。
 
 **输入可以只有图片。参考细节、部件清单、审计表和工作记录由执行本 skill 的模型主动观察、编写并持续更新，不假定用户或其他工具已经准备好。** 模板只定义记录方式，不提供本次参考的答案。
